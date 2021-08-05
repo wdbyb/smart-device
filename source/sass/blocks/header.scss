@@ -1,0 +1,141 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #1D2B33;
+  color: #ffffff;
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  max-width: 1410px;
+  padding: 33px;
+  margin: 0 auto;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.header__logo-image {
+  margin-right: 16px;
+}
+
+.header__logo-title {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 29px;
+}
+
+.header__logo-description {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: lowercase;
+  color: #788891;
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+
+  li {
+    margin-right: 78px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.header__list-link {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.header__list-image {
+  margin-right: 20px;
+}
+
+.header__button {
+  display: flex;
+  justify-content: center;
+  width: 180px;
+  height: 45px;
+  padding: 0;
+  margin-left: 28px;
+  border: none;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  background: none;
+  cursor: pointer;
+
+  span {
+    margin-top: 15px;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}
+
+@media (max-width: 1023px) {
+  .header__wrapper {
+    padding: 20px 25px;
+  }
+
+  .header__list-link {
+    p {
+      display: none;
+    }
+  }
+
+  .header__list {
+    li {
+      margin-right: 18px;
+    }
+  }
+
+  .header__button {
+    display: none;
+  }
+
+  .header__list-image {
+    margin: 0;
+
+    &--mail {
+      width: 26px;
+      height: 19px;
+    }
+
+    &--phone {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .header__logo-text {
+    display: none;
+  }
+}

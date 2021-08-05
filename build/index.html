@@ -1,13 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <h1>Добро пожаловать в Лигу А.</h1>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Производство и монтаж печатных плат">
+    <title>Smart Device</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <a class="header__logo">
+          <svg class="header__logo-image" width="52" height="52">
+            <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+          </svg>
+          <div class="header__logo-text">
+            <p class="header__logo-title">Smart Device</p>
+            <p class="header__logo-description">Умные технологии</p>
+          </div>
+        </a>
+        <ul class="header__list reset-list">
+          <li>
+            <a class="header__list-link" href="mailto:info@sd.ru">
+              <svg class="header__list-image header__list-image--mail" width="19" height="14">
+                <use xlink:href="img/sprite_auto.svg#icon-mail"></use>
+              </svg>
+              <p>info@sd.ru</p>
+            </a>
+          </li>
+          <li>
+            <a class="header__list-link" href="tel:+74950005252">
+              <svg class="header__list-image header__list-image--phone" width="18" height="18">
+                <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
+              </svg>
+              <p>+7 (495) 000 52 52</p>
+            </a>
+          </li>
+        </ul>
+        <button class="header__button" type="button">
+          <span>Заказать звонок</span>
+        </button>
+      </div>
+    </header>
+  </body>
 </html>
