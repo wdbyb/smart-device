@@ -1,3 +1,8 @@
 .company {
+  padding: 100px;
   margin-top: 200px;
+
+  @media (max-width: 1023px) {
+    padding: 100px 0;
+  }
 }
