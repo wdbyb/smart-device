@@ -3,8 +3,8 @@
   top: 0;
   left: 0;
   right: 0;
-  background: #1D2B33;
   color: #ffffff;
+  z-index: 2;
 
   p {
     padding: 0;
@@ -15,7 +15,7 @@
 .header__wrapper {
   display: flex;
   align-items: center;
-  max-width: 1410px;
+  max-width: 1476px;
   padding: 33px;
   margin: 0 auto;
 }
