@@ -155,6 +155,37 @@
           </ul>
         </div>
       </section>
+      <section class="questions">
+        <h2 class="visually-hidden">Задать вопросы</h2>
+        <div class="questions__wrapper">
+          <div class="questions__image">
+            <img src="img/paper-airplane.png" alt="">
+          </div>
+          <div class="questions__info">
+            <p class="questions__title">Остались вопросы? Задайте их нам!</p>
+            <p class="questions__description">Мы проконсультируем Вас бесплатно</p>
+            <form action="POST" class="questions__form">
+              <fieldset class="questions__fieldset">
+                <input class="questions__input" type="text" name="name" id="name" placeholder="Имя">
+                <label for="name" class="visually-hidden">Имя</label>
+                <input class="questions__input" type="text" name="tel" id="tel" placeholder="Телефон">
+                <label for="tel" class="visually-hidden">Телефон</label>
+              </fieldset>
+              <fieldset class="questions__fieldset">
+                <textarea class="questions__textarea" name="text" id="text" cols="30" rows="6" placeholder="Ваш вопрос"></textarea>
+              </fieldset>
+              <fieldset class="questions__fieldset">
+                <button class="questions__button" type="submit">
+                  <span>Задать вопрос</span>
+                </button>
+                <input class="guestions__agreement-checkbox visually-hidden" type="checkbox" name="agreement" id="agreement">
+                <label class="questions__agreement-label" for="agreement">Я согласен на обработку  персональных данных</label>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
+    <script src="js/script.js"></script>
   </body>
 </html>
