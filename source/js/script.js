@@ -1,6 +1,6 @@
 'use strict';
 
-[].forEach.call(document.querySelectorAll('#tel'), function (input) {
+[].forEach.call(document.querySelectorAll('.ru-number-mask'), function (input) {
   let keyCode;
   function mask(event) {
       event.keyCode && (keyCode = event.keyCode);
