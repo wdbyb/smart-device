@@ -77,7 +77,8 @@
   position: relative;
   display: block;
 
-  &:hover {
+  &:hover,
+  &:focus {
     .services__image {
       opacity: 0.6;
     }

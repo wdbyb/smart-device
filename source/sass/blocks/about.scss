@@ -91,6 +91,12 @@
   span {
     margin-top: 14px;
   }
+
+  &:hover,
+  &:focus {
+    color: orange;
+    border-color: orange;
+  }
 }
 
 .about__image-wrapper {

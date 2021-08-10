@@ -67,6 +67,19 @@
   display: flex;
   align-items: center;
   padding: 10px;
+
+  svg {
+    color: #00B2FF;
+  }
+
+  &:hover,
+  &:focus {
+    color: orange;
+
+    svg {
+      color: orange;
+    }
+  }
 }
 
 .header__list-image {
@@ -84,6 +97,7 @@
   border: 1px solid #ffffff;
   border-radius: 5px;
   background: none;
+  color: #ffffff;
   cursor: pointer;
 
   span {
@@ -94,7 +108,12 @@
     line-height: 16px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: #ffffff;
+  }
+
+  &:hover,
+  &:focus {
+    color: orange;
+    border-color: orange;
   }
 }
 

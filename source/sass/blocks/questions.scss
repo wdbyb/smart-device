@@ -193,6 +193,11 @@
   background: #00B2FF;
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    background: orange;
+  }
+
   @media (max-width: 1023px) {
     width: 280px;
     margin-right: 41px;
@@ -221,8 +226,17 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  opacity: 0.8;
+  color: rgba(255,255,255,0.8);
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: black;
+
+    &::before {
+      border-color: black;
+    }
+  }
 }
 
 .questions__agreement-checkbox + label::before {
@@ -246,4 +260,8 @@
   border-width: 0 1px 1px 0;
   padding: 1px;
   transform: rotate(45deg);
+}
+
+.questions__agreement-checkbox:checked + label:hover::after {
+  border-color: black;
 }
