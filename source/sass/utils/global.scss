@@ -40,29 +40,31 @@ a {
   margin: -1px;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul {
+.reset-text {
   margin: 0;
   padding: 0;
 }
 
-ul {
+.reset-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
-fieldset {
+.reset-fieldset {
   padding: 0;
   margin: 0;
   border: none;
   outline: none;
 }
 
-input {
+.reset-input {
   padding: 0;
   margin: 0;
-  border: 0;
+  border: none;
 }
 
-textarea {
+.reset-textarea {
   padding: 0;
   border: none;
 }

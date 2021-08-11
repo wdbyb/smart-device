@@ -11,44 +11,40 @@
   <body>
     <header class="header">
       <div class="header__wrapper">
-        <a class="header__logo">
-          <svg class="header__logo-image" width="52" height="52">
+        <a class="header__logo" aria-label="Логотип">
+          <svg class="header__logo-image" width="202" height="52">
             <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
           </svg>
-          <div class="header__logo-text">
-            <p class="header__logo-title">Smart Device</p>
-            <p class="header__logo-description">Умные технологии</p>
-          </div>
+          <svg class="header__logo-brain" width="38" height="38">
+            <use xlink:href="img/sprite_auto.svg#icon-logo-brain"></use>
+          </svg>
         </a>
         <ul class="header__list reset-list">
           <li>
-            <a class="header__list-link" href="mailto:info@sd.ru">
+            <a class="header__list-link" href="mailto:info@sd.ru" aria-label="Почтовый адрес">
               <svg class="header__list-image header__list-image--mail" width="19" height="14">
                 <use xlink:href="img/sprite_auto.svg#icon-mail"></use>
               </svg>
-              <p>info@sd.ru</p>
+              <p class="reset-text">info@sd.ru</p>
             </a>
           </li>
           <li>
-            <a class="header__list-link" href="tel:+74950005252">
+            <a class="header__list-link" href="tel:+74950005252" aria-label="Номер телефона">
               <svg class="header__list-image header__list-image--phone" width="18" height="18">
                 <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
               </svg>
-              <p>+7 (495) 000 52 52</p>
+              <p class="reset-text">+7 (495) 000 52 52</p>
             </a>
           </li>
         </ul>
-        <button class="header__button" type="button" aria-label="Открывает попап">
+        <a class="header__button" aria-label="Открывает попап">
           <span>Заказать звонок</span>
-        </button>
+        </a>
       </div>
     </header>
     <main class="main">
       <h1 class="visually-hidden">Smart Device</h1>
       <section class="intro">
-        <div class="intro__bg-wrapper">
-          <img src="img/top-section-bg.png" alt="" class="intro__bg">
-        </div>
         <div class="intro__wrapper">
           <div class="intro__microchips-wrapper">
             <!-- 1x = width: 705, height: 515; 2x = width: 1410, height: 1030; -->
@@ -63,13 +59,13 @@
               <use xlink:href="img/sprite_auto.svg#icon-triangle-circles-2"></use>
             </svg>
           </div>
-          <h2 class="intro__title">Печатные платы</h2>
-          <p class="intro__description">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <a href="#consultation" class="intro__button">
+          <h2 class="intro__title reset-text">Печатные платы</h2>
+          <p class="intro__description reset-text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+          <a href="#consultation" class="intro__button" aria-label="На консультацию">
             <span class="intro__button-desk-text">Получить бесплатную консультацию</span>
             <span class="intro__button-mob-text">Бесплатная консультация</span>
           </a>
-          <a class="intro__scroll" href="#advantages">Скролл вниз</a>
+          <a class="intro__scroll" href="#advantages" aria-label="Пролистнуть вниз">Скролл вниз</a>
         </div>
       </section>
       <section class="company">
@@ -89,15 +85,15 @@
             <svg class="advantages__triangles-smaller-2" width="300" height="300">
               <use xlink:href="img/sprite_auto.svg#icon-triangle"></use>
             </svg>
-            <ul class="advantages__list">
+            <ul class="advantages__list reset-list">
               <li class="advantages__item" tabindex="0">
                 <div class="advantages__image-wrapper">
                   <svg class="advantages__image" width="29" height="35">
                     <use xlink:href="img/sprite_auto.svg#icon-stopwatch"></use>
                   </svg>
                 </div>
-                <h4>Оперативные сроки</h4>
-                <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
+                <h4 class="reset-text">Оперативные сроки</h4>
+                <p class="reset-text">Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
               </li>
               <li class="advantages__item" tabindex="0">
                 <div class="advantages__image-wrapper">
@@ -105,8 +101,8 @@
                     <use xlink:href="img/sprite_auto.svg#icon-supliers"></use>
                   </svg>
                 </div>
-                <h4>Крупные поставщики</h4>
-                <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
+                <h4 class="reset-text">Крупные поставщики</h4>
+                <p class="reset-text">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
               </li>
               <li class="advantages__item" tabindex="0">
                 <div class="advantages__image-wrapper">
@@ -114,8 +110,8 @@
                     <use xlink:href="img/sprite_auto.svg#icon-detective"></use>
                   </svg>
                 </div>
-                <h4>Полная конфиденциальность</h4>
-                <p>По желанию клиента  мы обеспечиваем полную конфеденциальность.</p>
+                <h4 class="reset-text">Полная конфиденциальность</h4>
+                <p class="reset-text">По желанию клиента  мы обеспечиваем полную конфеденциальность.</p>
               </li>
               <li class="advantages__item" tabindex="0">
                 <div class="advantages__image-wrapper">
@@ -123,8 +119,8 @@
                     <use xlink:href="img/sprite_auto.svg#icon-tag"></use>
                   </svg>
                 </div>
-                <h4>Персонализация стоимости</h4>
-                <p>Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
+                <h4 class="reset-text">Персонализация стоимости</h4>
+                <p class="reset-text">Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
               </li>
             </ul>
           </div>
@@ -138,22 +134,22 @@
                 <img width="317" height="220" src="img/year.png" srcset="img/year@2x.png" alt="Число 2005">
               </picture>
             </div>
-            <h3 class="about__title">О компании</h3>
-            <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
-            <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
-            <button class="about__button" type="button" aria-label="Подробное описание">
+            <h3 class="about__title reset-text">О компании</h3>
+            <p class="reset-text">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
+            <p class="reset-text">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
+            <a class="about__button" href="#" aria-label="Подробное описание">
               <span>Подробнее</span>
-            </button>
+            </a>
           </div>
         </section>
       </section>
       <section class="services">
         <h2 class="visually-hidden">Услуги и товары</h2>
         <div class="services__wrapper">
-          <p class="services__description">Service Device предлагает следующие товары и услуги</p>
-          <ul class="services__list">
+          <p class="services__description reset-text">Service Device предлагает следующие товары и услуги</p>
+          <ul class="services__list reset-list">
             <li class="services__item">
-              <a href="#" class="services__link">
+              <a href="#" class="services__link" aria-label="Производство">
                 <div class="services__item-image-wrapper">
                   <!-- 1x = width: 370, height: 620; 2x = width: 740, height: 1240; -->
                   <picture>
@@ -161,12 +157,12 @@
                     <img class="services__image" width="370" height="620" src="img/services-1.jpg" srcset="img/services-1@2x.jpg" alt="Изображение производства печатных плат">
                   </picture>
                 </div>
-                <h3 class="services__item-title">Производство печатных плат</h3>
+                <h3 class="services__item-title reset-text">Производство печатных плат</h3>
                 <div class="services__item-arrow-box"></div>
               </a>
             </li>
             <li class="services__item">
-              <a href="#" class="services__link">
+              <a href="#" class="services__link" aria-label="Монтаж">
                 <div class="services__item-image-wrapper">
                   <!-- 1x = width: 370, height: 620; 2x = width: 740, height: 1240; -->
                   <picture>
@@ -174,12 +170,12 @@
                     <img class="services__image" width="370" height="620" src="img/services-2.jpg" srcset="img/services-2@2x.jpg" alt="Изображение монтажа печатных плат">
                   </picture>
                 </div>
-                <h3 class="services__item-title">Монтаж печатных плат</h3>
+                <h3 class="services__item-title reset-text">Монтаж печатных плат</h3>
                 <div class="services__item-arrow-box"></div>
               </a>
             </li>
             <li class="services__item">
-              <a href="#" class="services__link">
+              <a href="#" class="services__link" aria-label="Комплектующие">
                 <div class="services__item-image-wrapper">
                   <!-- 1x = width: 370, height: 620; 2x = width: 740, height: 1240; -->
                   <picture>
@@ -187,7 +183,7 @@
                     <img class="services__image" width="370" height="620" src="img/services-3.jpg" srcset="img/services-3@2x.jpg" alt="Изображение комплектующих для светотехники">
                   </picture>
                 </div>
-                <h3 class="services__item-title">Комплектующие для светотехники</h3>
+                <h3 class="services__item-title reset-text">Комплектующие для светотехники</h3>
                 <div class="services__item-arrow-box"></div>
               </a>
             </li>
@@ -211,19 +207,19 @@
             </svg>
           </div>
           <div class="questions__info">
-            <p class="questions__title">Остались вопросы? Задайте их нам!</p>
-            <p class="questions__description">Мы проконсультируем Вас бесплатно</p>
-            <form action="https://echo.htmlacademy.ru/" method="POST" class="questions__form" id="questions-form">
-              <fieldset class="questions__fieldset">
-                <input class="questions__input" type="text" name="name" id="name" placeholder="Имя" required="">
+            <p class="questions__title reset-text">Остались вопросы? Задайте их нам!</p>
+            <p class="questions__description reset-text">Мы проконсультируем Вас бесплатно</p>
+            <form action="https://echo.htmlacademy.ru/" method="POST" id="questions-form">
+              <fieldset class="questions__fieldset reset-fieldset">
+                <input type="text" name="name" id="name" placeholder="Имя" required="">
                 <label for="name" class="visually-hidden">Имя</label>
-                <input class="questions__input ru-number-mask" type="text" name="tel" id="tel" placeholder="Телефон" required="">
+                <input class="ru-number-mask" type="tel" name="tel" id="tel" placeholder="Телефон" required="">
                 <label for="tel" class="visually-hidden">Телефон</label>
               </fieldset>
-              <fieldset class="questions__fieldset">
-                <textarea class="questions__textarea" name="text" id="text" cols="30" rows="6" placeholder="Ваш вопрос"></textarea>
+              <fieldset class="questions__fieldset reset-fieldset">
+                <textarea name="text" id="text" cols="30" rows="6" placeholder="Ваш вопрос"></textarea>
               </fieldset>
-              <fieldset class="questions__fieldset">
+              <fieldset class="questions__fieldset reset-fieldset">
                 <button class="questions__button" type="submit" aria-label="Отправить данные">
                   <span>Задать вопрос</span>
                 </button>
@@ -236,19 +232,19 @@
       </section>
       <div class="popup">
         <div class="popup__wrapper">
-          <p class="popup__title">Закажите звонок</p>
-          <p class="popup__description">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-          <form action="https://echo.htmlacademy.ru/" method="POST" class="popup__form" id="popup-form">
-            <fieldset class="popup__fieldset">
-              <input class="popup__input" type="text" name="popup-name" id="popup-name" placeholder="Имя" required="">
+          <p class="popup__title reset-text">Закажите звонок</p>
+          <p class="popup__description reset-text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+          <form action="https://echo.htmlacademy.ru/" method="POST" id="popup-form">
+            <fieldset class="popup__fieldset reset-fieldset">
+              <input type="text" name="popup-name" id="popup-name" placeholder="Имя" required="">
               <label for="popup-name" class="visually-hidden">Имя</label>
-              <input class="popup__input ru-number-mask" type="text" name="popup-tel" id="popup-tel" placeholder="Телефон" required="">
+              <input class="ru-number-mask" type="tel" name="popup-tel" id="popup-tel" placeholder="Телефон" required="">
               <label for="popup-tel" class="visually-hidden">Телефон</label>
             </fieldset>
-            <fieldset class="popup__fieldset">
-              <textarea class="popup__textarea" name="popup-text" id="popup-text" cols="30" rows="4" placeholder="Ваш вопрос"></textarea>
+            <fieldset class="popup__fieldset reset-fieldset">
+              <textarea name="popup-text" id="popup-text" cols="30" rows="4" placeholder="Ваш вопрос"></textarea>
             </fieldset>
-            <fieldset class="popup__fieldset">
+            <fieldset class="popup__fieldset reset-fieldset">
               <button class="popup__button" type="submit" aria-label="Отправить данные">
                 <span>Отправить</span>
               </button>
@@ -264,33 +260,29 @@
       <div class="footer__wrapper">
         <div class="footer__top">
           <div class="footer__social">
-            <a class="footer__logo">
-              <svg class="footer__logo-image" width="52" height="52">
-                <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+            <a class="footer__logo" aria-label="Логотип">
+              <svg class="footer__logo-image" width="215" height="52">
+                <use xlink:href="img/sprite_auto.svg#icon-logo-footer"></use>
               </svg>
-              <div class="footer__logo-text">
-                <p class="footer__logo-title">Service Device</p>
-                <p class="footer__logo-description">Умные технологии</p>
-              </div>
             </a>
-            <p class="footer__since">1999-2018 SD Service Devices</p>
-            <ul class="footer__social-list">
+            <p class="footer__since reset-text">1999-2018 SD Service Devices</p>
+            <ul class="footer__social-list reset-list">
               <li class="footer__social-item">
-                <a href="#" class="footer__social-link">
+                <a href="#" class="footer__social-link" aria-label="Фейсбук">
                   <svg class="footer__facebook" width="27" height="27">
                     <use xlink:href="img/sprite_auto.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer__social-item">
-                <a href="#" class="footer__social-link">
+                <a href="#" class="footer__social-link" aria-label="Одноклассники">
                   <svg class="footer__ok" width="27" height="27">
                     <use xlink:href="img/sprite_auto.svg#icon-ok"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer__social-item">
-                <a href="#" class="footer__social-link">
+                <a href="#" class="footer__social-link" aria-label="Вконтакте">
                   <svg class="footer__vk" width="27" height="27">
                     <use xlink:href="img/sprite_auto.svg#icon-vk"></use>
                   </svg>
@@ -300,47 +292,47 @@
           </div>
           <div class="footer__info">
             <section class="footer__pages">
-              <h2 class="footer__pages-title">Разделы сайта <button class="footer__pages-toggler" type="button" aria-label="Открыть/закрыть список"></button></h2>
+              <h2 class="footer__pages-title reset-text">Разделы сайта <button class="footer__pages-toggler" type="button" aria-label="Открыть/закрыть список"></button></h2>
               <nav class="footer__nav">
-                <ul class="footer__nav-list">
+                <ul class="footer__nav-list reset-list">
                   <li class="footer__item">
-                    <a href="#" class="footer__link">О компании</a>
+                    <a href="#" class="footer__link" aria-label="О компании">О компании</a>
                   </li>
                   <li class="footer__item">
-                    <a href="#" class="footer__link">Продукты</a>
+                    <a href="#" class="footer__link" aria-label="Продукты">Продукты</a>
                   </li>
                   <li class="footer__item">
-                    <a href="#" class="footer__link">Производство печатных плат</a>
+                    <a href="#" class="footer__link" aria-label="Производство печатных плат">Производство печатных плат</a>
                   </li>
                   <li class="footer__item">
-                    <a href="#" class="footer__link">Монтаж печатных плат</a>
+                    <a href="#" class="footer__link" aria-label="Монтаж печатных плат">Монтаж печатных плат</a>
                   </li>
                   <li class="footer__item">
-                    <a href="#" class="footer__link">Комплектующие</a>
+                    <a href="#" class="footer__link" aria-label="Комплектующие">Комплектующие</a>
                   </li>
                   <li class="footer__item">
-                    <a href="#" class="footer__link">Доставка</a>
+                    <a href="#" class="footer__link" aria-label="Доставка">Доставка</a>
                   </li>
                   <li class="footer__item">
-                    <a href="#" class="footer__link">Контакты</a>
+                    <a href="#" class="footer__link" aria-label="Контакты">Контакты</a>
                   </li>
                 </ul>
               </nav>
             </section>
             <section class="footer__contacts">
               <h2 class="visually-hidden">Адрес и контакты</h2>
-              <p class="footer__contacts-title">Наш офис <button class="footer__contacts-toggler" type="button" aria-label="Открыть/закрыть список"></button></p>
+              <p class="footer__contacts-title reset-text">Наш офис <button class="footer__contacts-toggler" type="button" aria-label="Открыть/закрыть список"></button></p>
               <div class="footer__contacts-text">
                 <address class="footer__address">г. Мытищи, Олимпийский проспект, д.10</address>
-                <ul class="footer__phone-numbers">
+                <ul class="footer__phone-numbers reset-list">
                   <li class="footer__phone-number">
-                    <a href="tel:+74955894050">+7 (495) 589-40-50</a>
+                    <a href="tel:+74955894050" aria-label="Номер телефона">+7 (495) 589-40-50</a>
                   </li>
                   <li class="footer__phone-number">
-                    <a href="tel:+79250038767">+7 (925) 003-87-67</a>
+                    <a href="tel:+79250038767" aria-label="Номер телефона">+7 (925) 003-87-67</a>
                   </li>
                   <li class="footer__phone-number">
-                    <a href="tel:+792692608079">+7 (926) 926-080-79</a>
+                    <a href="tel:+792692608079" aria-label="Номер телефона">+7 (926) 926-080-79</a>
                   </li>
                 </ul>
               </div>
@@ -350,10 +342,10 @@
       </div>
       <div class="footer__copyright">
         <div class="footer__copytight-wrapper">
-          <p class="footer__rights"><a href="#">Все права защищены</a></p>
-          <p class="footer__site"><a href="#">1999-2018 SD Service Devices</a></p>
-          <p class="footer__confidential"><a href="#">Условия конфиденциальности</a></p>
-          <p class="footer__made-by"><a href="#">Developed by wow studio</a></p>
+          <p class="footer__rights reset-text">Все права защищены</p>
+          <p class="footer__site reset-text">1999-2018 SD Service Devices</p>
+          <p class="footer__confidential reset-text"><a href="#" aria-label="Условия конфидециальности">Условия конфиденциальности</a></p>
+          <p class="footer__made-by reset-text"><a href="#" aria-label="Разработано ВОУ студией">Developed by wow studio</a></p>
         </div>
       </div>
     </footer>

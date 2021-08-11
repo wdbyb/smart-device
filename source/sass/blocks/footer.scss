@@ -76,7 +76,7 @@
 
 .footer__copytight-wrapper {
   display: flex;
-  max-width: 1500px;
+  max-width: 1415px;
   margin: 0 auto;
 
   p {
@@ -164,22 +164,6 @@
   margin-right: 16px;
 }
 
-.footer__logo-title {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 29px;
-}
-
-.footer__logo-description {
-  font-family: "Roboto", "Arial", sans-serif;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-  text-transform: lowercase;
-  color: #788891;
-}
-
 .footer__social-list {
   display: flex;
 }
@@ -194,7 +178,7 @@
 
 .footer__pages,
 .footer__contacts {
-  font-family: "PT Mono", "Arial", sans-serif;
+  font-family: "PT Mono", "Courier", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 25px;
@@ -254,7 +238,7 @@
 
 .footer__copyright,
 .footer__since {
-  font-family: "PT Mono", "Arial", sans-serif;
+  font-family: "PT Mono", "Courier", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
