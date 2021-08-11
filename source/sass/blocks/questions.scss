@@ -216,12 +216,12 @@
   }
 }
 
-.questions__agreement-checkbox {
+.questions input[type="checkbox"] {
   bottom: 0;
   left: 50%;
 }
 
-.questions__agreement-label {
+.questions label[for="agreement"] {
   position: relative;
   max-width: 230px;
   padding-left: 32px;
@@ -243,7 +243,7 @@
   }
 }
 
-.questions__agreement-checkbox + label::before {
+.questions input[type="checkbox"] + label::before {
   content: "";
   position: absolute;
   top: 0;
@@ -253,7 +253,7 @@
   border: 1px solid #fff;
 }
 
-.questions__agreement-checkbox:checked + label::after {
+.questions input[type="checkbox"]:checked + label::after {
   content: "";
   position: absolute;
   top: 2px;
@@ -266,6 +266,6 @@
   transform: rotate(45deg);
 }
 
-.questions__agreement-checkbox:checked + label:hover::after {
+.questions input[type="checkbox"]:checked + label:hover::after {
   border-color: black;
 }

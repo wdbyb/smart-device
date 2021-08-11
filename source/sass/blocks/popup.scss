@@ -146,12 +146,12 @@
   }
 }
 
-.popup__agreement-checkbox {
+.popup input[type="checkbox"] {
   bottom: 0;
   left: 50%;
 }
 
-.popup__agreement-label {
+.popup label[for="popup-agreement"] {
   position: relative;
   max-width: 340px;
   padding-left: 32px;
@@ -164,7 +164,7 @@
   cursor: pointer;
 }
 
-.popup__agreement-checkbox + label::before {
+.popup input[type="checkbox"] + label::before {
   content: "";
   position: absolute;
   top: 0;
@@ -174,7 +174,7 @@
   border: 1px solid #fff;
 }
 
-.popup__agreement-checkbox:checked + label::after {
+.popup input[type="checkbox"]:checked + label::after {
   content: "";
   position: absolute;
   top: 2px;
