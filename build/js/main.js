@@ -65,19 +65,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
     popup.style.display = 'block';
 
+    document.querySelector('#popup-name').focus();
+    document.querySelector('body').style.overflow = 'hidden';
+
     popupClose.addEventListener('click', function() {
       popup.style.display = 'none';
+      document.querySelector('body').style.overflow = 'scroll';
     });
 
     document.addEventListener('click', function(evt) {
       if (evt.target.classList.contains('popup')) {
         popup.style.display = 'none';
+        document.querySelector('body').style.overflow = 'scroll';
       }
     });
 
     document.addEventListener('keydown', function(evt) {
       if (evt.key === 'Escape') {
         popup.style.display = 'none';
+        document.querySelector('body').style.overflow = 'scroll';
       }
     });
   });
@@ -95,7 +101,9 @@ document.addEventListener('DOMContentLoaded', function() {
     var togglerContactsElement = document.querySelector('.footer__contacts');
     var pagesElement = document.querySelector('.footer__nav');
     var togglerPagesElement = document.querySelector('.footer__pages');
+    var textareaElement = document.querySelector('#text');
 
+    textareaElement.rows = '4';
     contactsElement.style.display = 'none';
     togglerContactsElement.classList.add('closed');
     pagesElement.style.display = 'none';

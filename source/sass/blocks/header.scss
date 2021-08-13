@@ -36,6 +36,7 @@
 
 .header__list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   font-family: "PT Mono", "Courier", monospace;
   font-weight: 400;
@@ -76,6 +77,7 @@
 
 .header__button {
   display: flex;
+  flex-basis: 180px;
   justify-content: center;
   width: 180px;
   height: 45px;

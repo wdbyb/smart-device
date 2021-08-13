@@ -92,6 +92,8 @@
   font-size: 16px;
   line-height: 22px;
   border: none;
+  -webkit-appearance: none;
+  border-radius: 0;
   background: rgba(255,255,255,0.1);
   color: #fff;
 
@@ -113,6 +115,8 @@
   line-height: 22px;
   background: rgba(255,255,255,0.1);
   border: none;
+  -webkit-appearance: none;
+  border-radius: 0;
   color: #fff;
   resize: none;
 
@@ -140,6 +144,7 @@
   border-radius: 5px;
   background: #00B2FF;
   cursor: pointer;
+  order: 1;
 
   span {
     margin-top: 15px;
@@ -162,6 +167,7 @@
   line-height: 16px;
   opacity: 0.8;
   cursor: pointer;
+  order: 2;
 }
 
 .popup input[type="checkbox"] + label::before {
@@ -185,4 +191,16 @@
   border-width: 0 1px 1px 0;
   padding: 1px;
   transform: rotate(45deg);
+}
+
+.popup input[type="checkbox"]:focus + label {
+  color: black;
+}
+
+.popup input[type="checkbox"]:focus + label::before {
+  border-color: black;
+}
+
+.popup input[type="checkbox"]:focus + label::after {
+  border-color: black;
 }

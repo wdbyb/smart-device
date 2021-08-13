@@ -30,7 +30,6 @@
   background: #fff;
   border: 1px solid #EBEBEB;
   border-left: 3px solid #00B2FF;
-  cursor: pointer;
 
   &:nth-child(2n) {
     margin-right: 0;
@@ -78,8 +77,7 @@
   }
 }
 
-.advantages__item:hover,
-.advantages__item:focus {
+.advantages__item:hover {
   background: #00B2FF;
   border-color: #00B2FF;
 
