@@ -139,7 +139,7 @@
 
   @media (max-width: 767px ) {
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
 
@@ -224,6 +224,10 @@
 .questions input[type="checkbox"] {
   bottom: 0;
   left: 50%;
+
+  @media (max-width: 767px) {
+    left: 0;
+  }
 }
 
 .questions label[for="agreement"] {

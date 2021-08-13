@@ -59,13 +59,22 @@ document.addEventListener('DOMContentLoaded', function() {
   var popupOpen = document.querySelector('.header__button');
   var popup = document.querySelector('.popup');
   var popupClose = popup.querySelector('.popup__close');
+  var popupName = popup.querySelector('#popup-name');
 
   popupOpen.addEventListener('click', function(evt) {
     evt.preventDefault();
 
+    var loop = popup.querySelectorAll('.popup__back-to-1');
+
+    loop.forEach((item) => {
+      item.addEventListener('focus', () => {
+        popupName.focus();
+      });
+    });
+
     popup.style.display = 'block';
 
-    document.querySelector('#popup-name').focus();
+    popupName.focus();
     document.querySelector('body').style.overflow = 'hidden';
 
     popupClose.addEventListener('click', function() {
