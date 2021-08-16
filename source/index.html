@@ -232,10 +232,10 @@
       </section>
       <div class="popup">
         <div class="popup__wrapper">
+          <div class="popup__back-to-1" tabindex="1"></div>
           <p class="popup__title reset-text">Закажите звонок</p>
           <p class="popup__description reset-text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
           <form action="https://echo.htmlacademy.ru/" method="POST" id="popup-form">
-            <div class="popup__back-to-1" tabindex="1"></div>
             <fieldset class="popup__fieldset reset-fieldset">
               <input type="text" name="popup-name" id="popup-name" placeholder="Имя" tabindex="2" required autofocus>
               <label for="popup-name" class="visually-hidden">Имя</label>
@@ -252,9 +252,9 @@
                 <span>Отправить</span>
               </button>
             </fieldset>
-            <div class="popup__back-to-1" tabindex="7"></div>
           </form>
-          <button class="popup__close" type="button" aria-label="Закрыть попап"></button>
+          <button class="popup__close" type="button" aria-label="Закрыть попап" tabindex="7"></button>
+          <div class="popup__back-to-1" tabindex="8"></div>
         </div>
       </div>
     </main>
